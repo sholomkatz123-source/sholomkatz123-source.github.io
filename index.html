@@ -1,1 +1,97 @@
-<!doctype html><html><body><h1>Neileich Home</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neileich • After-School & Night Programs</title>
+  <meta name="description" content="Neileich runs after-school and night programs that keep children and teens productive, social, and growing — under the leadership of Harav Aryeh Sherwinter." />
+  <meta property="og:title" content="Neileich • After-School & Night Programs" />
+  <meta property="og:description" content="Neileich runs after-school and night programs that keep children and teens productive, social, and growing — under the leadership of Harav Aryeh Sherwinter." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="/index.html#top" class="brand"><div class="brandmark"></div><span>Neileich</span></a>
+      <div class="nav-links">
+        <a href="/programs.html">Programs</a>
+        <a href="/impact.html">Impact</a>
+        <a href="/leadership.html">Leadership</a>
+        <a href="/contact.html">Contact</a>
+        <a class="btn btn-primary" href="https://charidy.com/neileich">Donate</a>
+      </div>
+      <button class="mobile-toggle btn btn-ghost" onclick="document.getElementById('mobileMenu').showModal()">Menu</button>
+    </div>
+  </nav>
+
+  <dialog id="mobileMenu" style="background:var(--bg-soft); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); width:min(92%,520px);">
+    <form method="dialog">
+      <div class="container" style="padding:1rem 0;">
+        <div style="display:flex; justify-content:space-between;">
+          <div class="brand"><div class="brandmark"></div><strong>Neileich</strong></div>
+          <button class="btn btn-ghost">Close</button>
+        </div>
+        <div style="display:grid; gap:.8rem; padding-top:1rem;">
+          <a href="/programs.html">Programs</a>
+          <a href="/impact.html">Impact</a>
+          <a href="/leadership.html">Leadership</a>
+          <a href="/contact.html">Contact</a>
+          <a class="btn btn-primary" href="https://charidy.com/neileich">Donate</a>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <header class="hero" id="top">
+    <div class="layer-blob"></div>
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">Under the leadership of Harav Aryeh Sherwinter</span>
+        <h1 class="headline">Healthy time. Strong friendships. <span style="background:linear-gradient(135deg,var(--brand),var(--brand-2));-webkit-background-clip:text;color:transparent;">Brighter futures.</span></h1>
+        <p class="subhead">Neileich runs after-school and night programs that keep children and teens productive in warm, structured, and growth-oriented settings.</p>
+        <div style="display:flex; gap:.8rem; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://charidy.com/neileich">Donate</a>
+          <a class="btn btn-ghost" href="/programs.html">Explore Programs</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="num" id="statHours">0</div><div class="label">Weekly Hours</div></div>
+          <div class="stat"><div class="num" id="statStudents">0</div><div class="label">Participants</div></div>
+          <div class="stat"><div class="num" id="statMentors">0</div><div class="label">Mentors</div></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div>
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1200&auto=format&fit=crop" alt="Teens working together" style="border-radius:var(--radius); border:1px solid rgba(255,255,255,.16);"/>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="section-h"><div><div class="kicker">Voices</div><h2>What families say</h2></div></div>
+      <div class="slider" id="slider">
+        <div class="slides" id="slides">
+          <figure class="testimonial"><blockquote>“My son used to drift after school. Now he’s productive and happy.”</blockquote></figure>
+          <figure class="testimonial"><blockquote>“Neileich gave me leadership skills I use every day.”</blockquote></figure>
+          <figure class="testimonial"><blockquote>“Safe, structured, and exactly what our community needs.”</blockquote></figure>
+        </div>
+        <div class="dots"><div class="dot active" data-index="0"></div><div class="dot" data-index="1"></div><div class="dot" data-index="2"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div style="display:flex; align-items:center; gap:.6rem;"><div class="brandmark" style="width:28px; height:28px"></div><strong>Neileich</strong></div>
+      <small>© <span id="year"></span> Neileich. All rights reserved.</small>
+    </div>
+  </footer>
+  <script src="/assets/main.js"></script>
+</body>
+</html>
