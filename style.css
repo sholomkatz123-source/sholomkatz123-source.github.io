@@ -22,7 +22,7 @@ body {
 }
 
 #logo {
-    width: 220px;
+    width: 440px;
     filter: drop-shadow(0 0 15px #00eaff);
 }
 
@@ -34,8 +34,8 @@ body {
     font-size: 4em;
     color: #00eaff;
     opacity: 0;
-    text-shadow: 0 0 12px #00eaff, 0 0 25px #00bfff;
-    animation: flash 1.2s infinite alternate;
+    text-shadow: 0 0 16px #00eaff, 0 0 50px #00bfff;
+    animation: flash 1.8s infinite alternate;
 }
 
 @keyframes flash {
