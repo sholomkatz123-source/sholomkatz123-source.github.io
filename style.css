@@ -57,3 +57,23 @@ footer {
     p { font-size: 1.1em; }
     .card { padding: 30px 20px; }
 }
+/* COMING SOON flashing animation */
+.coming-soon {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ff4500;
+    margin-bottom: 30px;
+    animation: flash 1.2s infinite alternate;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
