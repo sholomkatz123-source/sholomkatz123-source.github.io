@@ -1,0 +1,71 @@
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at center, #00111a, #000000);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.coming-explode {
+    position: relative;
+    text-align: center;
+}
+
+.coming-explode h1 {
+    font-size: 4em;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 25px #00bfff, 0 0 50px #0088cc;
+    animation: pulseGlow 1.3s infinite alternate;
+}
+
+/* Shockwave explosion circles */
+.shockwave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #00eaff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: explode 2s infinite;
+}
+
+.shockwave.delay {
+    animation-delay: 1s;
+}
+
+/* Keyframes */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 10px #00eaff, 0 0 25px #00bfff;
+    }
+    100% {
+        transform: scale(1.1);
+        text-shadow: 0 0 20px #00eaff, 0 0 45px #00bfff, 0 0 70px #0088cc;
+    }
+}
+
+@keyframes explode {
+    0% {
+        opacity: 1;
+        width: 0px;
+        height: 0px;
+        border-width: 4px;
+    }
+    70% {
+        opacity: 0.5;
+        border-width: 2px;
+    }
+    100% {
+        opacity: 0;
+        width: 450px;
+        height: 450px;
+        border-width: 1px;
+    }
+}
